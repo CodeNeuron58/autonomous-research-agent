@@ -1,7 +1,36 @@
 [project]
 name = "autonomous-research-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Autonomous AI research agent using LangGraph, LangChain, and FastAPI to daily search, filter, and email arXiv papers."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "langgraph",
+    "langchain",
+    "langchain-groq",
+    "arxiv",
+    "sqlalchemy",
+    "aiosqlite", 
+    "pydantic-settings",
+    "structlog",
+    "apscheduler",
+    "email-validator",
+    "httpx"
+]
+
+# [project.optional-dependencies]
+# dev = [
+#     "pytest",
+#     "pytest-asyncio",
+#     "ruff"
+# ]
+
+# [tool.ruff]
+# line-length = 88
+# target-version = "py312"
+
+# [build-system]
+# requires = ["hatchling"]
+# build-backend = "hatchling.build"
