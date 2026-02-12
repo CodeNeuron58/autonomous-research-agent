@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     # arXiv settings
     arxiv_max_results: int = 30
     arxiv_delay_seconds: float = 3.0
+    arxiv_hours_back: int = 24
     
     # Database
     database_url: str = "postgresql://localhost:5432/arxiv_digest"
